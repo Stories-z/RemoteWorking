@@ -61,8 +61,8 @@ class TaskController(object):
 	def __init__(self,taskID,userID):
 		self.taskID=taskID
 
-		def removeTask(taskID):
-			del taskList[taskID] # controlloer itself not deleted
+		def removeTask():
+			del taskList[self.taskID] # controlloer itself not deleted
 
 		def addEnforcerToTask(userID):
 			taskList[self.taskID].enforcerIDList.append(userID)
